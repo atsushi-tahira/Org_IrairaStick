@@ -16,10 +16,11 @@ public class OutRangeSC : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "irairabo"){
+        if (other.gameObject.tag == "irairabo" && irairaboSC.playing){
             irairaboSC.playing = false;
-            other.gameObject.GetComponent<Renderer>().material.color = Color.gray;
+            other.gameObject.GetComponent<Renderer>().material.color = Color.white;
             other.gameObject.GetComponent<AudioSource>().mute = true;
+            GetComponent<AudioSource>().Play();
         }
     }
 }

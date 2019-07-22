@@ -23,4 +23,12 @@ public class StartPosSC : MonoBehaviour {
             other.gameObject.GetComponent<AudioSource>().pitch = 1f;
         }
     }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "irairabo")
+        {
+            irairaboSC.playing = true;
+        }
+    }
 }

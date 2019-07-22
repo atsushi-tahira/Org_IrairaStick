@@ -26,10 +26,11 @@ public class DangerousWallSC : MonoBehaviour {
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "irairabo") { 
-            irairaboSC.playing = false;
-        }
-    }
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (other.gameObject.tag == "irairabo")
+    //    {
+    //        irairaboSC.playing = false;
+    //    }
+    //}
 }
